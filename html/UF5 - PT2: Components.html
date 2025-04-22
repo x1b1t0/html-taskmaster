@@ -1,46 +1,112 @@
 <!DOCTYPE html>
- <html>
- <head>
- <meta charset="UTF−8">
- <title>.:: UF5 - PT2: Components HTML ::.</title>
- </head>
- <body>
+<html>
+<head>
+  <meta charset="UTF−8">
+  <title>.:: UF5 - PT2: Components HTML ::.</title>
+</head>
+<body>
 
- <!-- Todo lo de abajo son las diferentes etiquetas -->
- 
- 
+<!-- De aqui a mas abajo veremos las diferentes etiquetas de HTML -->
 
- <!-- Encabezados -->
- <h1>Encabezado H1</h1>
- <h2>Encabezado H2</h2>
- <h3>Encabezado H3</h3>
- <h4>Encabezado H4</h4>
- <h5>Encabezado H5</h5>
- <h6>Encabezado H6</h6>
+<!-- Encabezados -->
+<h1>Encabezado H1</h1>
+<h2>Encabezado H2</h2>
+<h3>Encabezado H3</h3>
+<h4>Encabezado H4</h4>
+<h5>Encabezado H5</h5>
+<h6>Encabezado H6</h6>
 
- <!-- Párrafos -->
- <p> Parrafo: Paco sanz libertad.</p>
+<!-- Párrafos -->
+<p> Parrafo: Paco sanz libertad.</p>
 
- <!-- Enlaces -->
- <a href="https://www.youtube.com/watch?v=s-C8G7TJP8g" target="_blank">Este es un enlace</a>
+<!-- Enlaces -->
+<a href="https://www.youtube.com/watch?v=s-C8G7TJP8g" target="_blank">Este es un enlace</a>
 
- <!-- Imágenes -->
- <img src="/images/john portk.jpeg" alt="Imagen de ejemplo">
+<!-- Imágenes -->
+<img src="/images/john portk.jpeg" alt="Imagen de ejemplo">
 
- <!-- Listas no ordenadas -->
- <ul>
-    <li>Elemento de lista 1</li>
-    <li>Elemento de lista 2</li>
-    <li>Elemento de lista 3</li>
- </ul>
+<!-- Audio-->
+<audio src="/images/LOS LIRILITOS DICEN LARILA.mp3" controls>
+  <p>Tu navegador no soporta el elemento de audio.</p>
+</audio>
 
- <!-- Listas ordenadas -->
- <ol>
-    <li>Elemento de lista 1</li>
-    <li>Elemento de lista 2</li>
-    <li>Elemento de lista 3</li>
- </ol>
-<!-- Aqui a continuacion irian, tablas y formularios pero nuestro profesor ha indicado que no las hagamos todavia --> 
-  
- </body>
- </html> 
+<!-- Video -->
+<video src="/images/Fernanfloo Arabe Saturado XD Buenas tardeeeeeeees.mp4" controls>
+  <p>Tu navegador no soporta el elemento de video.</p>
+</video>
+
+<!-- Listas no ordenadas -->
+<ul>
+  <li>Elemento de lista 1</li>
+  <li>Elemento de lista 2</li>
+  <li>Elemento de lista 3</li>
+</ul>
+
+<!-- Listas ordenadas -->
+<ol>
+  <li>Elemento de lista 1</li>
+  <li>Elemento de lista 2</li>
+  <li>Elemento de lista 3</li>
+</ol>
+
+<!-- DIV y SPAN -->
+<div style="background-color: lightblue; padding: 10px;">
+  <p>Este es un contenedor <span style="color: red;">con texto en rojo</span>.</p>
+</div>
+
+<!-- strong y em -->
+<p>Este es un texto <strong>importante</strong> y este es <em>enfatizado</em>.</p>
+
+<!-- Salto de línea y línea horizontal -->
+<p>Línea 1<br>Línea 2</p>
+<hr>
+
+<!-- Etiquetas semánticas: abbr, cite, mark, code, pre -->
+<p><abbr title="HyperText Markup Language">HTML</abbr> es el lenguaje de la web.</p>
+<p><cite>El Quijote</cite> es una obra clásica.</p>
+<p>Esto es un <mark>texto resaltado</mark>.</p>
+<pre>
+<code>
+function saludar() {
+  console.log("Hola mundo");
+}
+</code>
+</pre>
+
+<!-- blockquote y q -->
+<blockquote cite="https://es.wikipedia.org/wiki/Cita">
+  Una cita larga de una fuente externa.
+</blockquote>
+<p>Ella dijo: <q>La práctica hace al maestro</q>.</p>
+
+<!-- Estructura semántica -->
+<header>
+  <h1>Mi sitio web</h1>
+</header>
+
+<nav>
+  <a href="#inicio">Inicio</a> |
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<main>
+  <section>
+    <h2>Sección principal</h2>
+    <article>
+      <h3>Artículo 1</h3>
+      <p>Contenido del artículo.</p>
+    </article>
+  </section>
+
+  <aside>
+    <p>Contenido secundario o publicidad.</p>
+  </aside>
+</main>
+
+<footer>
+  <p>&copy; 2025 Mi sitio web</p>
+</footer>
+
+</body>
+</html>
+
