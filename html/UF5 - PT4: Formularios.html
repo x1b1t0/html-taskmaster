@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-</table>
 
-<h1>Formularios</h1>
+<header>
+<h1>UF5 - PT4: Formularios</h1>
+<h2>CFGM: SMX - Aplicaciones Web</h2>
+<h3>Institut Puig Castellar</h3>
+<h4>Ivan Vivar</h4>
+</header>
 
 <!-- Formularios y distintos tipos de datos -->
 <form action="/submit" method="post">
@@ -15,16 +19,33 @@
     <label for="telefono">Contraseña:</label><br>  
     <input type="tel" id="Contraseña" name="Contraseña"><br><br>
 
+    <label for="Edad">Edad:</label><br>  
+    <input type="number" id="edad" name="edad" value="edad"><br><br>
+   
+<section>
+    <label for="""estado-civil">Estado Civil:</label><br>
+    <input type="radio" id="soltero" name="estado-civil" value="soltero">
+    <label for="solterao">Solter@</label><br>
+    <input type="radio" id="casado" name="estado-civil" value="casado">
+    <label for="casado">Casad@</label><br>
+    <input type="radio" id="otro" name="estado-civil" value="otro">
+    <label for="otro">Otro</label><br><br>
+</section>
+
+<label for="hora">Género:</label><br>
+    <select id="genero" name="genero">
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="otro">Otro</option>
+    </select><br><br>
+
     <input type="checkbox" id="terminos" name="Acepto los terminos">
     <label for="terminos">Acepto los términos y condiciones</label><br><br>
-    
-    <input type="number" id="edad" name="edad" value="edad"><br><br>
-    <label for="fecha">Fecha de nacimiento:</label><br>
 
-    <input type="date" id="fecha" name="fecha"><br><br> 
+    <label for="textarea">Comentanos tu problema:</label><br>
+    <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea><br><br>
 
     <input type="submit" value="Enviar">
-
 </form> 
 </body>
 </html>
