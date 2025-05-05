@@ -3,61 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pràctica 1 - HTML Bàsic</title>
+    <title>Expositor CSS - Institut Puig Castellar</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        .destacat {
+            color: red;
+        }
+
+        #unic {
+            background-color: yellow;
+        }
+
+        h2, h3 {
+            font-style: italic;
+        }
+
+        div p {
+            color: green;
+        }
+
+        div > p {
+            font-weight: bold;
+        }
+
+        a[target="_blank"] {
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        p::first-line {
+            text-transform: uppercase;
+        }
+
+    </style>
 </head>
 <body>
     <header>
-        <h1>Institut Puig Castellar</h1>
-        <h2>CFGM: SMX - Aplicacions WEB</h2>
+        <h1>Expositor de Selectors CSS</h1>
     </header>
 
     <section>
-        <h2>Introducció al HTML</h2>
-        <p>Aquesta pàgina és un exemple bàsic d'HTML5 amb diferents elements.</p>
-
-        <h3>Elements inclosos:</h3>
-        <ul>
-            <li>Capçaleres (h1, h2, h3...)</li>
-            <li>Paràgrafs</li>
-            <li>Imatge</li>
-            <li>Llistes</li>
-            <li>Enllaços</li>
-        </ul>
+        <h2>Selector de tipus</h2>
+        <p>Aquest text no canvia.</p>
+        <h1>Aquest h1 és de color blau</h1>
     </section>
 
     <section>
-        <h2>Imatge</h2>
-        <img src="imagen_puig.png" alt="Logo Institut Puig Castellar" width="300">
+        <h2>Selector de classe</h2>
+        <p class="destacat>Aquest paràgraf és vermell.</p>
+        <p>Aquest no ho és.</p>
     </section>
 
     <section>
-        <h2>Llistes</h2>
-        <h3>Llista numerada:</h3>
-        <ol>
-            <li>Primer element</li>
-            <li>Segon element</li>
-            <li>Tercer element</li>
-        </ol>
-
-        <h3>Llista no numerada:</h3>
-        <ul>
-            <li>Element A</li>
-            <li>Element B</li>
-            <li>Element C</li>
-        </ul>
+        <h2>Selector d'identificador</h2>
+        <p id="unic">Aquest paràgraf té fons groc.</p>
     </section>
 
     <section>
-        <h2>Enllaços</h2>
-        <p>Visita el <a href="https://www.institutpuigcastellar.cat" target="_blank">Institut Puig Castellar</a>.</p>
+        <h2>Selector de grup</h2>
+        <h2>Aquest h2 és cursiva</h2>
+        <h3>I aquest h3 també</h3>
     </section>
 
+    <section>
+        <h2>Selector descendent i fill directe</h2>
+        <div>
+            <p>Aquest <b>paràgraf</b> dins un div és verd i negreta.</p>
+            <span><p>No hauria de ser verd ni negreta.</p></span>
+        </div>
+    </section>
 
-    
+    <section>
+        <h2>Selector d'atribut</h2>
+        <a href="https://www.google.com" target="_blank">Enllaç en nova pestanya</a>
+        <br>
+        <a href="https://www.google.com">Enllaç normal</a>
+    </section>
+
+    <section>
+        <h2>Pseudoclasse :hover</h2>
+        <a href="#">Passa-hi el ratolí per sobre!</a>
+    </section>
+
+    <section>
+        <h2>Pseudoelement ::first-line</h2>
+        <p>Aquesta és la primera línia que es mostrarà en majúscules si ocupa més d’una línia.</p>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Institut Puig Castellar - Pràctica HTML</p>
-        <a href="uf5-pt3-taules.html">Practica Taules</a>
+        <p>&copy; 2024 Institut Puig Castellar - Expositor CSS</p>
     </footer>
 </body>
 </html>
