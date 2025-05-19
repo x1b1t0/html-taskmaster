@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La meva presentació</title>
+    <style>
+        /* ESTILS GENERALS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* CAPÇALERA (ID) */
+        #capçalera {
+            background-color: #550269;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .nom-destacat {
+            color: rgb(0, 140, 255);
+        }
+
+        /* SECCIONS (CLASS) */
+        .seccio {
+            background-color: white;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .dada-destacada {
+            font-weight: bold;
+            color: #3366cc;
+        }
+
+        a {
+            color: #3366cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        /* ESTILS DEL FORMULARI */
+        .formulari-contacte {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .camp-formulari {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .camp-formulari:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 102, 204, 0.3);
+            border-color: #66afe9;
+        }
+
+        .boto-enviar {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .boto-enviar:hover {
+            background-color: #0056b3;
+        }
+
+        /* PEU (ID) */
+        #peu {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+
+        #peu a {
+            color: #3366cc;
+            text-decoration: none;
+        }
+
+        #peu a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- CAPÇALERA (ID) -->
+    <div id="capçalera">
+        <h1>Hola, sóc <span class="nom-destacat">Ivan Vivar</span></h1>
+    </div>
+
+    <!-- CONTINGUT PRINCIPAL (CLASSES + DIVS) -->
+    <div class="seccio">
+        <h2>Sobre mi</h2>
+        <p>Tinc <span class="dada-destacada">18</span> anys i estudio <span class="dada-destacada">SMX</span>.</p>
+    </div>
+
+    <div class="seccio">
+        <h2>Les meves aficions</h2>
+        <ul>
+            <li><a href="#">Arts marcials</a></li>
+            <li><a href="#">Informatica</a></li>
+            <li><a href="#">Musica</a></li>
+        </ul>
+    </div>
+
+    <div class="seccio">
+        <h2>Sobre mi</h2>
+        <p> Soc un noi <span class="dada-destacada">molt curiós</span> i m'agrada aprendre sobre qualsevol cosa.</p>
+    </div>
+
+    <!-- FORMULARI DE CONTACTE (CLASSES) -->
+    <div class="seccio">
+        <h2>Contacta'm</h2>
+        <h3> Soc expert en HTML. Si vols que et faci repàs omple el formulari</h3>
+        <form class="formulari-contacte">
+            <label>Nom:</label>
+            <input type="text" class="camp-formulari"><br><br>
+            <label>Email:</label>
+            <input type="email" class="camp-formulari"><br><br>
+            <label>Missatge:</label>
+            <textarea class="camp-formulari"></textarea><br><br>
+            <button type="submit" class="boto-enviar">Enviar</button>
+        </form>
+    </div>
+
+    <!-- PEU DE PÀGINA (ID) -->
+    <div id="peu">
+        <p>Contacta'm: <a href="mailto:ivivar@elpuig.xeill.net">ivivar@elpuig.xeill.net</a></p>
+    </div>
+</body>
+</html>
